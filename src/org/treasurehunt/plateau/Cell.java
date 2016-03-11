@@ -26,11 +26,11 @@ public class Cell {
 
 	
 	public boolean isBase(){
-		return (this.base == 0) ? false : true;
+		return !(this.base == 0);
 	}
 	
 	public boolean isObstacle(){
-		return (this.obstacle == 0) ? false : true;
+		return !(this.obstacle == 0);
 	}
 	
 	public boolean isTrap() {
