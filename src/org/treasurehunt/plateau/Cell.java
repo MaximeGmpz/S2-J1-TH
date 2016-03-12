@@ -24,35 +24,59 @@ public class Cell {
 	
 	Cell(){}
 
-	
+	/** 
+	 * 
+	 * @return true if cell is a base
+	 */
 	public boolean isBase(){
 		return !(this.base == 0);
 	}
-	
+	/**
+	 * 
+	 * @return true if cell is an obstacle
+	 */
 	public boolean isObstacle(){
 		return !(this.obstacle == 0);
 	}
-	
+	/**
+	 * 
+	 * @return true if cell contain a trap
+	 */
 	public boolean isTrap() {
 		return trap;
 	}
-
+	/**
+	 * 
+	 * @param trap
+	 */
 	public void setTrap(boolean trap) {
 		this.trap = trap;
 	}
-
+	/**
+	 * 
+	 * @return an integer corresponding to the kind of obstacle
+	 */
 	public int getObstacle() {
 		return obstacle;
 	}
-
+	/**
+	 * 
+	 * @param obstacle
+	 */
 	public void setObstacle(int obstacle) {
 		this.obstacle = obstacle;
 	}
-
+	/**
+	 * 
+	 * @return an integer corresponding to the team of the base
+	 */
 	public int getBase() {
 		return base;
 	}
-
+	/**
+	 * 
+	 * @param base
+	 */
 	public void setBase(int base) {
 		this.base = base;
 	}
